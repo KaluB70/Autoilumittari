@@ -1,0 +1,90 @@
+html{
+    font-family: 'Roboto Mono', monospace;
+}
+* {
+    box-sizing: border-box;
+}
+.row::after, .row-2::after, .row-3::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .col-1 {width: 33.33%}
+  .col-2 {width: 66.66%}
+  .col-3 {width:100%}
+
+body{
+    background: #F2ECE4;
+}
+#nopeusOtsikko, #nopeusOtsikko2{
+  padding-left: 33%;
+  text-align: center;
+  font-size: 1.8em;
+}
+#nopeusOtsikko span, #nopeusOtsikko2 span{
+  font-size: 0.6em;
+  padding-left:37%;
+}
+#nopeus, #nopeus2{
+  margin-left: 32%;
+  margin-top: 5%;
+}
+#luku, #luku2{
+  margin-left: 40%;
+  max-width: 13%;
+}
+#vertailuOtsikko{
+  text-align: center;
+  margin-left:0px;
+  margin-top:0px;
+  font-size: 1.8em;
+}
+#vertailuOtsikko span{
+  font-size:0.6em;
+}
+.row h1, .row h2, #tulos1, #tulos2, #tulos3{
+  text-align: center;
+}
+#A, #B, #C{
+  margin-left: 10%;
+}
+#matkaTeksti{
+  text-align: center;
+  margin-left: 42%;
+  font-size: 1.5em;
+}
+#matka{
+  margin-left: 42%;
+  max-width:13%;
+}
+#lasku{
+  margin-left:36%;
+  width: 27%;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid red;
+  background:#BFBAB3;
+
+}
+#lasku:hover{
+  background:#726F6B;
+}
+.autokulutus{
+  float: right;
+  margin-right: 10%;
+}
+#tulos2, #tulos1, #tulos3{
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.col-1 h1{
+  font-size:1.8em;
+}
+.col-1 h1 span{
+  font-size:0.7em;
+}
