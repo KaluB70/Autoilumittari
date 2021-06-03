@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Autoilumittari</title>
+</head>
+<body>
+    <!--Rivi 1 - Otsikot-->
+    <div class = "row">
+        <div class = col-1></div>
+        <div class = "col-1">
+            <img src="./assets/solidabis.png" alt="Solidabis" style = max-width:100%;>
+            <h1>Koodihaaste 2021 <br> <span>Autoilumittari</span></h1>
+        </div>
+        <div class = col-1></div>
+    </div>
+    <!--Rivi 2 - Sliderit ja valinnat-->
+    <div class = "row-2">
+        <div class = col-1>
+            <label for="nopeus" id = "nopeusOtsikko">Nopeus <br><span>(km/h): </span></label><br>
+            <input type="range" name="nopeus" id="nopeus" min = "1" max = "200" value = "60"><br>
+            <input type="number" name="nopeus" id="luku" min = "1" max = "200"><br>
+        </div>
+        <div class = "col-1">
+            <p id = "vertailuOtsikko">Auton valinta <br><span>(kulutus nopeudella 1 km/h)</span></p>
+            <form>
+                <input type="radio" name="Auto" id="A" checked>
+                <label for="A">Auto A <span class="autokulutus">3l/100km</span></label><br>
+                <input type="radio" name="Auto" id="B">
+                <label for="B">Auto B <span class="autokulutus">3.5l/100km</span></label><br>
+                <input type="radio" name="Auto" id="C">
+                <label for="C">Auto C <span class="autokulutus">4l/100km</span></label><br><br>
+                <label for="matka" id = "matkaTeksti">Matka: </label><br>
+                <input type="number" name="matka" id="matka" min="1" value = "10">
+                <label for="matka">Km</label><br><br><br>
+                <input type="button" value="Laske" id = "lasku">
+            </form>
+        </div>
+        <div class = col-1>
+            <label for="nopeus" id = "nopeusOtsikko2">Nopeus<br><span>(km/h): </span></label><br>
+            <input type="range" name="nopeus" id="nopeus2" min = "1" max = "200" value = "100">
+            <input type="number" name="nopeus" id="luku2" min = "1" max = "200"><br>
+        </div>
+    </div>
+    <!-- Rivi 3 - Laskujen tulokset-->
+    <div class = row-3>
+        <div class = col-1 id="tulos1">
+            <p>Aikaa matkaan nopeudella <span id = "nopeus3"></span> km/h kuluu: <br><b><span id = aika></span></b></p>
+            <p>Polttoainetta matkaan kuluu: <br><b><span id= "kulutus1"></span></b></p>
+            
+        </div>
+        <div class = "col-1" id="tulos2">
+            <p>Aikaa säästyy nopeammalla vauhdilla: <br><b><span id = "saastoAika"></span></b></p>
+            <p>Polttoainetta kuluu nopeammalla vauhdilla: <br><b><span id = saastoPolttoaine></span></b></p>
+        </div>
+        <div class = col-1 id="tulos3">
+            <p>Aikaa matkaan nopeudella <span id = "nopeus4"></span> km/h kuluu: <br><b><span id = aika2></span></b></p>
+            <p>Polttoainetta matkaan kuluu: <br><b><span id= "kulutus2"></span></b></p>
+        </div>
+    </div>
+    <script src="./actions/script.js"></script>
+</body>
+</html>
