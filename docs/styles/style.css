@@ -22,16 +22,16 @@ body{
     background: #F2ECE4;
 }
 #nopeusOtsikko, #nopeusOtsikko2{
-  padding-left: 33%;
+  padding-left: 36%;
   text-align: center;
   font-size: 1.8em;
 }
 #nopeusOtsikko span, #nopeusOtsikko2 span{
   font-size: 0.6em;
-  padding-left:37%;
+  padding-left:40%;
 }
 #nopeus, #nopeus2{
-  margin-left: 32%;
+  margin-left: 35%;
   margin-top: 5%;
 }
 #luku, #luku2{
@@ -67,7 +67,7 @@ body{
   width: 27%;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid red;
+  border: 2px solid coral;
   background:#BFBAB3;
 
 }
@@ -79,7 +79,7 @@ body{
   margin-right: 10%;
 }
 #tulos2, #tulos1, #tulos3{
-  border: 2px solid red;
+  border: 2px solid coral;
   border-radius: 10px;
 }
 .col-1 h1{
@@ -87,4 +87,8 @@ body{
 }
 .col-1 h1 span{
   font-size:0.7em;
+}
+.row .col-1 p{
+  text-align:center;
+  padding-top: 41%;
 }
